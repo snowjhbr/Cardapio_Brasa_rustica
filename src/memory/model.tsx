@@ -1,7 +1,6 @@
 interface IPedido {
     id: number;
     nome: string;
-    borda: string | null;
     descricao: string;
     observacao: string;
     quantidade: number;

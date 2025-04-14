@@ -6,7 +6,18 @@ import ConfirmacaoExclusao from "./components/modal/ConfirmacaoExclusao";
 import Produto from "./components/Card/Produto";
 import Banner from "/banner.png";
 import Logo from "/logo.png";
-import Forumulario from "./components/modal/Formulario";
+import Formulario from "./components/modal/Formulario";
+
+
+
+const {
+  EsfihaAberta,
+  EsfihaFechada,
+  sucos,
+  bebidas,
+  beirutes
+} = memory();
+
 
 
 
@@ -14,7 +25,6 @@ export interface IPedido {
   id: number;
   nome: string;
   descricao: string;
-  borda: string | null;
   observacao: string;
   quantidade: number;
   valor_unit: number;
@@ -91,7 +101,7 @@ export default function Home() {
 
   return (
     <div className={`h-screen relative scroll-smooth focus:scroll-auto ${formularioModal ? 'overflow-hidden' : ''}`}>
-      {formularioModal && <Forumulario closeModal={() => setFormularioModal(false)} closeSacola={() => setOpenSacola(false)} />}
+      {formularioModal && <Formulario closeModal={() => setFormularioModal(false)} closeSacola={() => setOpenSacola(false)} />}
 
       {confirmacaoExclusaoConfig.closeModal && (
         <ConfirmacaoExclusao
@@ -141,7 +151,6 @@ export default function Home() {
             <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#Pizzas">Pizzas</a></li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#EsfihasAbertas">Esfihas Abertas</a></li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#EsfihasFechadas">Esfihas Fechadas</a></li>
-            <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#Bordas">Bordas</a></li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#Sucos">Sucos</a></li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg"><a href="#Bebidas">Bebidas</a></li>
           </ul>
@@ -152,6 +161,48 @@ export default function Home() {
             <Produto
               header="Pizzas"
               produtos={produtos}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Pizzas"
+              produtos={produtos}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Esfihas Abertas"
+              produtos={EsfihaAberta}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Esfihas Fechadas"
+              produtos={EsfihaFechada}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Sucos"
+              produtos={sucos}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Bebidas"
+              produtos={bebidas}
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Beirutes"
+              produtos={beirutes}
               modalAberto={setAlgumModalAberto}
               montar={false}
               sinalOpenFrom={setFormularioModal}
@@ -174,7 +225,6 @@ export default function Home() {
                   <div className="w-full flex items-end bg-white border rounded-lg justify-between relative p-2" key={index}>
                     <div className="flex-1">
                       <h2>{pedido.nome}</h2>
-                      <p className="text-xs text-zinc-700">{pedido.borda}</p>
                       <p className="text-xs text-red-600">{pedido.observacao}</p>
                       <p className="text-xs text-zinc-600">
                         R${pedido.valor_unit.toFixed(2).replace('.', ',')}/unit

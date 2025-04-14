@@ -19,7 +19,6 @@ interface IFormularioPedido {
 export interface IProduto {
     id: number;
     nome: string;
-    borda: string | null;
     observacao: string | null;
     quantidade: number;
     valor_unit: number;
@@ -31,7 +30,7 @@ export function formularioPedido(props: IFormularioPedido): string {
         https://api.whatsapp.com/send?phone=5588997011308&text=*Brasa Rústica Pizzaria*%0AInstagram:%20@brasa_rustica%0AWhatsapp:(88) 99931-7368%20%0A---------------------------------------%0A*Nome:* ${props.nome}%0A*Telefone:* ${props.telefone} %0A*Forma_Retirada:* ${props.formaRetirada} ${props.formaRetirada === 'Delivery' ? `%0A*Rua:* ${props.rua}%0A*Número:* ${props.numero}%0A*Complemento:* ${props.complemento}%0A*Referência:* ${props.referencia}%0A*Bairro:* ${props.bairro}`: ""} ${props.cpf != null ? `%0A*CPF*: ${props.cpf}` : ""}
         %0A---------------------------------------${props.produto.map((pro) => {
             return (
-                `%0A*${pro.nome}*%0A${pro.borda?.length || 0 > 0 ? `    Borda: ${pro.borda} %0A` : ''}${pro.observacao?.length || 0 > 0 ? `    Observação: ${pro.observacao} %0A` : ''}    R$ ${pro.valor_total.toFixed(2).replace('.',',')} x ${pro.quantidade < 10 ? '0'+pro.quantidade : pro.quantidade} ------ Total: R$ ${pro.valor_total.toFixed(2).replace('.', ',')}`
+                `%0A*${pro.nome}*%0A ${pro.observacao?.length || 0 > 0 ? `    Observação: ${pro.observacao} %0A` : ''}    R$ ${pro.valor_total.toFixed(2).replace('.',',')} x ${pro.quantidade < 10 ? '0'+pro.quantidade : pro.quantidade} ------ Total: R$ ${pro.valor_total.toFixed(2).replace('.', ',')}`
             )
         }).join('')}%0A--------------------------------------%0AForma de pagamento: ${props.pagamento}${props.pagamento == 'dinheiro'? `%0ATroco para R$ ${props.troco?.toFixed(2).replace('.',',')}` : ''} 
         %0A--------------------------------------%0ASubtotal                      R$${props.subtotal.toFixed(2).replace('.',',')}%0ATaxa de Entrega          R$${props.frete.toFixed(2).replace('.',',')}%0ATotal                            R$${props.valorTotal.toFixed(2).replace('.',',')}%0A

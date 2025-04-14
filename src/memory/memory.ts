@@ -162,28 +162,7 @@ export function memory() {
         descricao: 'Escolha até dois sabores e borda!',
         valorInicial: 50.00,
         grupoAdicional: [
-            {
-                grupoAdicional: 'Borda',
-                quantidadeMaxima: 1,
-                quantidadeMinima: 1,
-                itens: [
-                    {
-                        nome: 'Cheddar',
-                        imagem: 'url',
-                        valor: 3.90  
-                    },
-                    {
-                        nome: 'Catupiry',
-                        imagem: 'url',
-                        valor: 3.90  
-                    },
-                    {
-                        nome: 'Chocolate',
-                        imagem: 'url',
-                        valor: 7.90  
-                    }
-                ]
-            },
+            
             {
                 grupoAdicional: 'Metade 1',
                 quantidadeMaxima: 1,
@@ -784,29 +763,7 @@ export function memory() {
        
     ];
 
-    const bordas = [
-        {
-            id: 1,
-            nome: 'Catupiry',
-            descricao: 'Catupiry',
-            imagem: '',
-            valor: 3.00
-        },
-        {
-            id: 2,
-            nome: 'Cheddar',
-            descricao: 'Cheggar',
-            imagem: '',
-            valor: 3.00
-        },
-        {
-            id: 3,
-            nome: 'Chocolate',
-            descricao: 'Chocolate',
-            imagem: '',
-            valor: 3.00
-        },
-    ];    
+     
 
     const beirutes = [
         
@@ -1044,6 +1001,8 @@ export function memory() {
         },
         
     ];
+
+    
     
 
     return {
@@ -1051,7 +1010,6 @@ export function memory() {
         PizzaMontada,
         EsfihaAberta,
         EsfihaFechada,
-        bordas,
         bairros,
         sucos,
         bebidas,
