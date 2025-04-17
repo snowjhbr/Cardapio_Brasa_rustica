@@ -1213,10 +1213,202 @@ export function memory() {
         
     ];
 
+    /*const cervejas = [
+        {
+            id: 1,
+            nome: 'Skol',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 2,
+            nome: 'Devassa ',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 3,
+            nome: 'Budweiser',
+            descricao: '600ml',
+            imagem: '',
+            valor: 12.00
+        },
+        {
+            id: 4,
+            nome: 'Haineken',
+            descricao: '600ml',
+            imagem: '',
+            valor: 15.00
+        },
+        {
+            id: 5,
+            nome: 'Itaipava ',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 7,
+            nome: 'Stella',
+            descricao: '600ml',
+            imagem: '',
+            valor: 12.00
+        },
+        {
+            id: 7,
+            nome: 'Ice cabaré',
+            descricao: '600ml',
+            imagem: '',
+            valor: 9.00
+        },
+        
+    ];*/
+
+    const drinks = [
+        {
+            id: 1,
+            nome: 'Paixão',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 2,
+            nome: 'Paraíso  ',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 3,
+            nome: 'Lagoa azul',
+            descricao: '600ml',
+            imagem: '',
+            valor: 12.00
+        },
+        {
+            id: 4,
+            nome: 'Fogo ardente',
+            descricao: '600ml',
+            imagem: '',
+            valor: 9.00
+        },
+        {
+            id: 5,
+            nome: 'Arco-íris',
+            descricao: '600ml',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 7,
+            nome: 'Cupido',
+            descricao: '600ml',
+            imagem: '',
+            valor: 9.00
+        },
+        {
+            id: 7,
+            nome: 'Capetinha',
+            descricao: '600ml',
+            imagem: '',
+            valor: 9.00
+        },
+        
+    ];
+
+    const petiscos = [
+        {
+            id: 1,
+            nome: 'Batata frita 400g',
+            descricao: '400g.',
+            imagem: '',
+            valor: 16.00
+        },
+        {
+            id: 2,
+            nome: 'Batata frita 250g ',
+            descricao: '250g.',
+            imagem: '',
+            valor: 10.00
+        },
+        {
+            id: 3,
+            nome: 'Bolinha de queijo',
+            descricao: 'Bolinha de queijo 12 unidades.',
+            imagem: '',
+            valor: 15.00
+        },
+        {
+            id: 4,
+            nome: 'Bolinha de frango',
+            descricao: 'Bolinha de frango 12 unidades.',
+            imagem: '',
+            valor: 15.00
+        },
+        {
+            id: 5,
+            nome: 'Bolinha mista',
+            descricao: 'Bolinha mista 12 unidades.',
+            imagem: '',
+            valor: 15.00
+        },
+        {
+            id: 6,
+            nome: 'Bolinha de bacalhau',
+            descricao: 'Bolinha de bacalhau 12 unidades.',
+            imagem: '',
+            valor: 15.00
+        },
+        {
+            id: 7,
+            nome: 'Bolinha de carne de sol',
+            descricao: 'Botlinha de carne de sol 12 unidades.',
+            imagem: '',
+            valor: 16.00
+        },
+        {
+            id: 8,
+            nome: 'Bolinha de camarão',
+            descricao: 'Bolinha de camarão 12 unidades.',
+            imagem: '',
+            valor: 16.00
+        },
+        {
+            id: 9,
+            nome: 'Cebola empanada',
+            descricao: 'Cebola empanada 12 unidades.',
+            imagem: '',
+            valor: 9.00
+        },
+        {
+            id: 10,
+            nome: 'Queijo com melaço',
+            descricao: 'Queijo com melaço 150g.',
+            imagem: '',
+            valor: 9.00
+        },
+        {
+            id: 11,
+            nome: 'Filé trinchado com fritas',
+            descricao: 'Filé trinchado com fritas 400g.',
+            imagem: '',
+            valor: 9.00
+        },
+        
+    ];
+
     const paes = [
         { nome: 'Pão Bola', valor: 0.00 },
         { nome: 'Pão Árabe', valor: 2.00 },
-      ];
+    ];
+
+    const mesas = Array.from({ length: 20 }, (_, i) => ({
+        numero: (i + 1).toString(),
+      }));
+    
 
     
     
@@ -1233,7 +1425,11 @@ export function memory() {
         beirutes,
         HamburguerArtesanal,
         HamburguerTradicional,
-        paes
+        paes,
+        mesas,
+        /*cervejas,*/
+        drinks,
+        petiscos
         
     };
 }

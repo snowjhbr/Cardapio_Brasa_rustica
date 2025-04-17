@@ -182,7 +182,7 @@ export default function Home() {
         <section className="flex gap-2 py-4">
           <div className="flex flex-col flex-wrap gap-2 flex-1">
             <Produto
-              header="Monte Sua Pizza"
+              header="Pizzas"
               produtos={produtos}
               tipoProduto="Pizza"
               modalAberto={setAlgumModalAberto}
