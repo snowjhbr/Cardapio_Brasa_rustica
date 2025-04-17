@@ -4,7 +4,7 @@ export function memory() {
             id: 1,
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
-            imagem: '',
+            imagem: 'pizzas/PizzaFranbacon.png',
             valor: 38.00,
             tipoProduto: 'Pizza' 
         },
@@ -12,7 +12,7 @@ export function memory() {
             id: 2,
             nome: 'Frango',
             descricao: 'Mussarela frango milho orégano e molho da casa. ',
-            imagem: '',
+            imagem: 'pizzas/PizzaFrango.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -20,7 +20,7 @@ export function memory() {
             id: 3,
             nome: 'Calabresa',
             descricao: 'Mussarela calabresa cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaCalabresa.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -28,7 +28,7 @@ export function memory() {
             id: 4,
             nome: 'Mista',
             descricao: 'Mussarela presunto orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaMista.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -36,7 +36,7 @@ export function memory() {
             id: 5,
             nome: 'Marguerita',
             descricao: 'Mussarela tomate manjericão orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaMarguerita.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -44,7 +44,7 @@ export function memory() {
             id: 6,
             nome: 'Mussarela',
             descricao: 'Mussarela tomate orégano e molho da casa',
-            imagem: '',
+            imagem: 'pizzas/PizzaMussarela.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -52,7 +52,7 @@ export function memory() {
             id: 7,
             nome: 'Baiana',
             descricao: 'Mussarela calabresa picada pimenta ovo cebola orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaBaiana.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -60,7 +60,7 @@ export function memory() {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/Pizza4queijos.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -68,7 +68,7 @@ export function memory() {
             id: 9,
             nome: 'Portuguesa',
             descricao: 'Mussarela presunto ovos tomate milho cebola pimentão orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaPortuguesa.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -76,7 +76,7 @@ export function memory() {
             id: 10,
             nome: 'Carne do sol',
             descricao: 'Mussarela carne do sol cebola roxa orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaCarnedesol.png',
             valor: 40.00,
             tipoProduto: 'Pizza'
         },
@@ -84,7 +84,7 @@ export function memory() {
             id: 11,
             nome: 'A moda da casa',
             descricao: 'Mussarela frango presunto calabresa bacon batata palha orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaModa.png',
             valor: 38.00,
             tipoProduto: 'Pizza'
         },
@@ -92,7 +92,7 @@ export function memory() {
             id: 12,
             nome: 'Carbonara',
             descricao: 'Mussarela presunto bacon catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaCarbonara.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -100,7 +100,7 @@ export function memory() {
             id: 13,
             nome: 'Milho',
             descricao: 'Mussarela milho verde orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaMilho.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -108,7 +108,7 @@ export function memory() {
             id: 14,
             nome: 'Bacon',
             descricao: 'Mussarela bacon cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaBacon.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -116,7 +116,7 @@ export function memory() {
             id: 15,
             nome: 'Brasa rústica',
             descricao: 'Mussarela frango bacon calabresa picada barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaBrasa.png',
             valor: 38.00,
             tipoProduto: 'Pizza'
         },
@@ -124,7 +124,7 @@ export function memory() {
             id: 16,
             nome: 'Barbebacon',
             descricao: 'Mussarela bacon barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaBarbebacon.png',
             valor: 35.00,
             tipoProduto: 'Pizza'
         },
@@ -132,7 +132,7 @@ export function memory() {
             id: 17,
             nome: 'Lombinho',
             descricao: 'Mussarela lombo canadense orégano e molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaLombinho.png',
             valor: 40.00,
             tipoProduto: 'Pizza'
         },
@@ -140,7 +140,7 @@ export function memory() {
             id: 18,
             nome: 'Bigonta',
             descricao: 'Frango ovo milho mussarela orégano molho da casa.',
-            imagem: '',
+            imagem: 'pizzas/PizzaBigonta.png',
             valor: 38.00,
             tipoProduto: 'Pizza'
         },
@@ -148,7 +148,7 @@ export function memory() {
             id: 19,
             nome: 'Mexicana',
             descricao: 'Calabresa peperone queijo coalho mussarela pimenta calabresa cebola em fios molho da casa e orégano.',
-            imagem: '',
+            imagem: 'pizzas/PizzaMexicana.png',
             valor: 38.00,
             tipoProduto: 'Pizza'
         },
@@ -156,7 +156,7 @@ export function memory() {
             id: 20,
             nome: 'Atum',
             descricao: 'Atum mussarela cebola em fios molho da casa e orégano.',
-            imagem: '',
+            imagem: 'pizzas/PizzaAtum.png',
             valor: 40.00,
             tipoProduto: 'Pizza'
         },
@@ -164,7 +164,7 @@ export function memory() {
             id: 21,
             nome: 'Chocolate',
             descricao: 'Chocolate.',
-            imagem: '',
+            imagem: 'pizzas/PizzaChocolate.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -172,7 +172,7 @@ export function memory() {
             id: 22,
             nome: 'Chocolate com M&Ms',
             descricao: 'Chocolate e M&Ms.',
-            imagem: '',
+            imagem: 'pizzas/PizzaChocolatemem.png',
             valor: 30.00,
             tipoProduto: 'Pizza'
         },
@@ -192,6 +192,7 @@ export function memory() {
     const PizzaMontada = {
         nome: 'Monte Sua Pizza!',
         descricao: 'Escolha até dois sabores e borda!',
+        imagem: 'pizzas/PizzaMontesuapizza.png',
         valorInicial: 50.00,
         grupoAdicional: [
             
@@ -1365,7 +1366,7 @@ export function memory() {
         {
             id: 7,
             nome: 'Bolinha de carne de sol',
-            descricao: 'Botlinha de carne de sol 12 unidades.',
+            descricao: 'Bolinha de carne de sol 12 unidades.',
             imagem: '',
             valor: 16.00
         },

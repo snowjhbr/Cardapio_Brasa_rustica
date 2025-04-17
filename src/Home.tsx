@@ -9,7 +9,7 @@ import Banner from '/banner.png';
 import Logo from '/logo.png';
 import Formulario from './components/modal/Formulario';
 
-const { EsfihaAberta, EsfihaFechada, HamburguerArtesanal, HamburguerTradicional, sucos, bebidas, beirutes } = memory();
+const { EsfihaAberta, EsfihaFechada, HamburguerArtesanal, HamburguerTradicional, sucos, bebidas, beirutes, drinks, petiscos } = memory();
 
 export interface IPedido {
   id: number;
@@ -176,6 +176,12 @@ export default function Home() {
             <li className="bg-white w-fit px-3 py-1 rounded-lg">
               <a href="#Beirutes">Beirutes</a>
             </li>
+            <li className="bg-white w-fit px-3 py-1 rounded-lg">
+              <a href="#Beirutes">Drinks</a>
+            </li>
+            <li className="bg-white w-fit px-3 py-1 rounded-lg">
+              <a href="#Beirutes">Petiscos</a>
+            </li>
           </ul>
         </nav>
 
@@ -242,6 +248,22 @@ export default function Home() {
               header="Beirutes"
               produtos={beirutes}
               tipoProduto="Beirute"
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Drinks"
+              produtos={drinks}
+              tipoProduto="Drink"
+              modalAberto={setAlgumModalAberto}
+              montar={false}
+              sinalOpenFrom={setFormularioModal}
+            />
+            <Produto
+              header="Pestiscos"
+              produtos={petiscos}
+              tipoProduto="Petisco"
               modalAberto={setAlgumModalAberto}
               montar={false}
               sinalOpenFrom={setFormularioModal}
