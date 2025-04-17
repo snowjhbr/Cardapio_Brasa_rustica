@@ -5,157 +5,189 @@ export function memory() {
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
             imagem: '',
-            valor: 38.00
+            valor: 38.00,
+            tipoProduto: 'Pizza' 
         },
         {
             id: 2,
             nome: 'Frango',
             descricao: 'Mussarela frango milho orégano e molho da casa. ',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 3,
             nome: 'Calabresa',
             descricao: 'Mussarela calabresa cebola em fios orégano e molho da casa.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 4,
             nome: 'Mista',
             descricao: 'Mussarela presunto orégano e molho da casa.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 5,
             nome: 'Marguerita',
             descricao: 'Mussarela tomate manjericão orégano e molho da casa.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 6,
             nome: 'Mussarela',
             descricao: 'Mussarela tomate orégano e molho da casa',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 7,
             nome: 'Baiana',
             descricao: 'Mussarela calabresa picada pimenta ovo cebola orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 9,
             nome: 'Portuguesa',
             descricao: 'Mussarela presunto ovos tomate milho cebola pimentão orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 10,
             nome: 'Carne do sol',
             descricao: 'Mussarela carne do sol cebola roxa orégano e molho da casa.',
             imagem: '',
-            valor: 40.00
+            valor: 40.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 11,
             nome: 'A moda da casa',
             descricao: 'Mussarela frango presunto calabresa bacon batata palha orégano e molho da casa.',
             imagem: '',
-            valor: 38.00
+            valor: 38.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 12,
             nome: 'Carbonara',
             descricao: 'Mussarela presunto bacon catupiry orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 13,
             nome: 'Milho',
             descricao: 'Mussarela milho verde orégano e molho da casa.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 14,
             nome: 'Bacon',
             descricao: 'Mussarela bacon cebola em fios orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 15,
             nome: 'Brasa rústica',
             descricao: 'Mussarela frango bacon calabresa picada barbecue orégano e molho da casa.',
             imagem: '',
-            valor: 38.00
+            valor: 38.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 16,
             nome: 'Barbebacon',
             descricao: 'Mussarela bacon barbecue orégano e molho da casa.',
             imagem: '',
-            valor: 35.00
+            valor: 35.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 17,
             nome: 'Lombinho',
             descricao: 'Mussarela lombo canadense orégano e molho da casa.',
             imagem: '',
-            valor: 40.00
+            valor: 40.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 18,
             nome: 'Bigonta',
             descricao: 'Frango ovo milho mussarela orégano molho da casa.',
             imagem: '',
-            valor: 38.00
+            valor: 38.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 19,
             nome: 'Mexicana',
             descricao: 'Calabresa peperone queijo coalho mussarela pimenta calabresa cebola em fios molho da casa e orégano.',
             imagem: '',
-            valor: 38.00
+            valor: 38.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 20,
             nome: 'Atum',
             descricao: 'Atum mussarela cebola em fios molho da casa e orégano.',
             imagem: '',
-            valor: 40.00
+            valor: 40.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 21,
             nome: 'Chocolate',
             descricao: 'Chocolate.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
         {
             id: 22,
             nome: 'Chocolate com M&Ms',
             descricao: 'Chocolate e M&Ms.',
             imagem: '',
-            valor: 30.00
+            valor: 30.00,
+            tipoProduto: 'Pizza'
         },
 
     ];
+
+    const bordas = [
+        { nome: 'Sem recheio', valor: 0.00 },
+        { nome: 'Catupiry', valor: 7.00 },
+        { nome: 'Cheddar', valor: 7.00 },
+        { nome: 'Chocolate', valor: 5.00 },
+        { nome: 'Cream Cheese', valor: 8.00 },
+        { nome: 'Coxinha', valor: 15.00 },
+        { nome: 'Vulcão', valor: 9.00 },
+      ];
 
     const PizzaMontada = {
         nome: 'Monte Sua Pizza!',
@@ -495,7 +527,7 @@ export function memory() {
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
             imagem: '',
-            valor: 5.50
+            valor: 5.50            
         },
         {
             id: 2,
@@ -896,6 +928,185 @@ export function memory() {
         
     ];
 
+    const HamburguerArtesanal = [
+        {
+            id: 1,
+            nome: 'Clássico',
+            descricao: 'Pão brioche selado, burger bovino 130g, queijo gratinado e molho "secreto" rústico',
+            imagem: '',
+            valor: 22.40
+        },
+        {
+            id: 2,
+            nome: 'Simples ',
+            descricao: 'Pão brioche selado, burger bovino 130g, molho “secreto” rústico',
+            imagem: '',
+            valor: 15.90
+        },
+        {
+            id: 3,
+            nome: 'X-Bacon',
+            descricao: 'Pão brioche selado, burger bovino 130g, creme de cheddar artesanal, bacon e molho "secreto” rústico',
+            imagem: '',
+            valor: 25.90
+        },
+        {
+            id: 4,
+            nome: 'Bacon Cream Cheese',
+            descricao: 'Pão brioche selado, burger bovino 130g, cream cheese, bacon e molho "secreto" rústico',
+            imagem: '',
+            valor: 26.90
+        },
+        {
+            id: 5,
+            nome: 'Burger de Siri',
+            descricao: 'Pão brioche selado, 3 burger bovino 130g, creme de cheddar artesanal, bacon, molho “secreto” rústico',
+            imagem: '',
+            valor: 32.90
+        }
+                
+    ];
+
+    const HamburguerTradicional = [
+        {
+            id: 1,
+            nome: 'X-Tudo',
+            descricao: 'Pão bola, carne, frango, bacon, calabresa, queijo, ovo, salsicha, presunto, milho, alface e tomate',
+            imagem: '',
+            valor: 15.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 2,
+            nome: 'Carne de Sol',
+            descricao: 'Pão bola, carne de sol, queijo, cebola, alface e tomate',
+            imagem: '',
+            valor: 16.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 3,
+            nome: 'Fran Bacon',
+            descricao: 'Pão bola, frango, bacon, queijo, milho, alface e tomate',
+            imagem: '',
+            valor: 13.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 4,
+            nome: 'X-Frango',
+            descricao: 'Pão bola, frango, queijo, milho, alface e tomate',
+            imagem: '',
+            valor: 11.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 5,
+            nome: 'X-Calabresa',
+            descricao: 'Pão bola, carne, calabresa, queijo, alface e tomate',
+            imagem: '',
+            valor: 12.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 6,
+            nome: 'Hamburgão',
+            descricao: 'Pão bola, carne, ovo, presunto, queijo, alface e tomate',
+            imagem: '',
+            valor: 12.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 7,
+            nome: 'Super Burguer',
+            descricao: 'Pão bola, carne, bacon, ovo, salsicha, queijo, alface e tomate',
+            imagem: '',
+            valor: 14.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 8,
+            nome: 'X-Egg Bacon',
+            descricao: 'Pão bola, bacon, ovo, queijo, alface e tomate',
+            imagem: '',
+            valor: 11.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 9,
+            nome: 'X-Bacon',
+            descricao: 'Pão bola, bacon, carne, queijo, alface e tomate',
+            imagem: '',
+            valor: 13.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 10,
+            nome: 'X-Salada',
+            descricao: 'Pão bola, carne, queijo, milho, pimentão, cebola, alface e tomate',
+            imagem: '',
+            valor: 10.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 11,
+            nome: 'Americano',
+            descricao: 'Pão bola, presunto, ovo, queijo, alface e tomate',
+            imagem: '',
+            valor: 8.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 12,
+            nome: 'Bauru Burguer',
+            descricao: 'Pão bola, carne, presunto, queijo, alface e tomate',
+            imagem: '',
+            valor: 10.00,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 13,
+            nome: 'X-Burguer',
+            descricao: 'Pão bola, carne, queijo, alface e tomate',
+            imagem: '',
+            valor: 8.50,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 14,
+            nome: 'Egg Burguer',
+            descricao: 'Pão bola, carne, ovo, alface e tomate',
+            imagem: '',
+            valor: 8.50,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 15,
+            nome: 'Egg',
+            descricao: 'Pão bola, ovo, queijo, alface e tomate',
+            imagem: '',
+            valor: 7.50,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 16,
+            nome: 'Hambúrguer',
+            descricao: 'Pão bola, carne, alface e tomate',
+            imagem: '',
+            valor: 6.50,
+            tipoProduto: 'Hambúrguer',
+          },
+          {
+            id: 17,
+            nome: 'Misto',
+            descricao: 'Pão bola, presunto, queijo, alface e tomate',
+            imagem: '',
+            valor: 7.50,
+            tipoProduto: 'Hambúrguer',
+          },
+        ];
+
+
     const bairros = [
         {
             bairro: 'Combinar',
@@ -1002,18 +1213,27 @@ export function memory() {
         
     ];
 
+    const paes = [
+        { nome: 'Pão Bola', valor: 0.00 },
+        { nome: 'Pão Árabe', valor: 2.00 },
+      ];
+
     
     
 
     return {
         produtos,
+        bordas,
         PizzaMontada,
         EsfihaAberta,
         EsfihaFechada,
         bairros,
         sucos,
         bebidas,
-        beirutes
+        beirutes,
+        HamburguerArtesanal,
+        HamburguerTradicional,
+        paes
         
     };
 }

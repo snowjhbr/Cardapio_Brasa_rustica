@@ -1,12 +1,16 @@
 interface IPedido {
     id: number;
     nome: string;
+    tipoProduto?: string;
     descricao: string;
-    observacao: string;
+    observacao: string | null;
     quantidade: number;
     valor_unit: number;
     valor_total: number;
+    borda?: string | null;
+    pao?: string | null;
 }
+
 
 function adicionarPedidos(produto: IPedido) {
     let produtos: IPedido[] = JSON.parse(localStorage.getItem("produtos") || "[]");

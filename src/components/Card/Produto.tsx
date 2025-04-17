@@ -1,6 +1,7 @@
 // src/components/Card/Produto.tsx
 import { useState } from 'react';
 import ProdutoModal from '../modal/ProdutoModal';
+import { memory } from '../../memory/memory';
 
 interface Iprodutos {
   id: number;
@@ -16,11 +17,13 @@ interface IProdutosProps {
   produtos: Iprodutos[];
   montar: boolean;
   sinalOpenFrom: (open: boolean) => void;
+  tipoProduto?: string;
 }
 
-function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom}: IProdutosProps) {
+function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom, tipoProduto }: IProdutosProps) {
+  const { PizzaMontada } = memory();
   const [modal, setModal] = useState(false);
-  const [, setModalMontarProduto] = useState(false);
+  const [montarPizzaModal, setMontarPizzaModal] = useState(false);
   const [produtoSelecionado, setProdutoSelecionado] = useState<Iprodutos>({
     id: 0,
     nome: '',
@@ -35,22 +38,40 @@ function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom}: IProdu
     setModal(true);
   }
 
+  function abrirMontarPizza() {
+    modalAberto(true);
+    setMontarPizzaModal(true);
+  }
+
   function openFromModal() {
     sinalOpenFrom(true);
   }
-
-   // Debug
 
   return (
     <div>
       {modal ? (
         <ProdutoModal
           openFrom={openFromModal}
-          produto={produtoSelecionado}
+          produto={{ ...produtoSelecionado, tipoProduto }}
           closeModal={() => {
             setModal(false);
             modalAberto(false);
           }}
+          montarPizza={false}
+          saboresDisponiveis={produtos}
+        />
+      ) : null}
+
+      {montarPizzaModal ? (
+        <ProdutoModal
+          openFrom={openFromModal}
+          produto={{ id: 0, nome: '', descricao: '', imagem: '', valor: 0, tipoProduto: 'Pizza' }}
+          closeModal={() => {
+            setMontarPizzaModal(false);
+            modalAberto(false);
+          }}
+          montarPizza={true}
+          saboresDisponiveis={PizzaMontada.grupoAdicional[0].itens}
         />
       ) : null}
 
@@ -64,7 +85,7 @@ function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom}: IProdu
         {montar ? (
           <li className="flex items-center gap-1 flex-wrap w-full bg-white rounded-lg">
             <button
-              onClick={() => setModalMontarProduto(true)}
+              onClick={abrirMontarPizza}
               className="w-full h-[100px] flex text-left items-center justify-between py-2 px-3"
             >
               <div>
@@ -73,7 +94,7 @@ function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom}: IProdu
                   Escolha dois sabores!
                 </p>
               </div>
-              <img className="w-20 h-20 rounded-lg" src="" alt="Monte sua pizza" />
+              <img className="w-20 h-20 rounded-lg" src="/placeholder.jpg" alt="Monte sua pizza" />
             </button>
           </li>
         ) : null}

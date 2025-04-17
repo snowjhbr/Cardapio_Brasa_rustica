@@ -105,6 +105,10 @@ export default function Resumo(props: IProps) {
                                             {pedido.nome}
                                         </h2>
 
+                                        {pedido.tipoProduto && (
+                                            <p className="text-sm text-gray-500">Tipo: {pedido.tipoProduto}</p>
+                                        )}
+
                                         <p className="text-xs text-red-600">
                                             {pedido.observacao}
                                         </p>
