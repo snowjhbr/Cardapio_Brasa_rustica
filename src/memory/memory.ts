@@ -527,133 +527,133 @@ export function memory() {
             id: 1,
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaFranbacon.png',
             valor: 5.50            
         },
         {
             id: 2,
             nome: 'Frango',
             descricao: 'Mussarela frango milho orégano e molho da casa. ',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaFrango.png',
             valor: 5.50
         },
         {
             id: 3,
             nome: 'Calabresa',
             descricao: 'Mussarela calabresa cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaCalabresa.png',
             valor: 5.50
         },
         {
             id: 4,
             nome: 'Mista',
             descricao: 'Mussarela presunto orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaMista.png',
             valor: 5.50
         },
         {
             id: 5,
             nome: 'Marguerita',
             descricao: 'Mussarela tomate manjericão orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaMarguerita.png',
             valor: 5.50
         },
         {
             id: 6,
             nome: 'Mussarela',
             descricao: 'Mussarela tomate orégano e molho da casa',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaMussarela.png',
             valor: 5.50
         },
         {
             id: 7,
             nome: 'Baiana',
             descricao: 'Mussarela calabresa picada pimenta ovo cebola orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaBaiana.png',
             valor: 5.50
         },
         {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/Esfihaaberta4queijos.png',
             valor: 5.50
         },
         {
             id: 9,
             nome: 'Portuguesa',
             descricao: 'Mussarela presunto ovos tomate milho cebola pimentão orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaPortuguesa.png',
             valor: 5.50
         },
         {
             id: 10,
             nome: 'Carne do sol',
             descricao: 'Mussarela carne do sol cebola roxa orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaCarnedesol.png',
             valor: 6.00
         },
         {
             id: 11,
             nome: 'A moda da casa',
             descricao: 'Mussarela frango presunto calabresa bacon batata palha orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaModa.png',
             valor: 5.50
         },
         {
             id: 12,
             nome: 'Carbonara',
             descricao: 'Mussarela presunto bacon catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaCarbonara.png',
             valor: 5.50
         },
         {
             id: 13,
             nome: 'Milho',
             descricao: 'Mussarela milho verde orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaMilho.png',
             valor: 5.50
         },
         {
             id: 14,
             nome: 'Bacon',
             descricao: 'Mussarela bacon cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaBacon.png',
             valor: 5.50
         },
         {
             id: 15,
             nome: 'Brasa rústica',
             descricao: 'Mussarela frango bacon calabresa picada barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaBrasarustica.png',
             valor: 6.00
         },
         {
             id: 16,
             nome: 'Barbebacon',
             descricao: 'Mussarela bacon barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaBarbebacon.png',
             valor: 5.50
         },
         {
             id: 17,
             nome: 'Bigonta',
             descricao: 'Frango ovo milho mussarela orégano molho da casa.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaBigonta.png',
             valor: 6.00
         },
         {
             id: 18,
             nome: 'Mexicana',
             descricao: 'Calabresa peperone queijo coalho mussarela pimenta calabresa cebola em fios molho da casa e orégano.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaMexicana.png',
             valor: 6.00
         },
         {
             id: 19,
             nome: 'Chocolate',
             descricao: 'Chocolate.',
-            imagem: '',
+            imagem: 'esfihasabertas/EsfihaabertaChocolate.png',
             valor: 5.50
         },
        
