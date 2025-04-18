@@ -177,10 +177,10 @@ export default function Home() {
               <a href="#Beirutes">Beirutes</a>
             </li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg">
-              <a href="#Beirutes">Drinks</a>
+              <a href="#Drinks">Drinks</a>
             </li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg">
-              <a href="#Beirutes">Petiscos</a>
+              <a href="#Petiscos">Petiscos</a>
             </li>
           </ul>
         </nav>
