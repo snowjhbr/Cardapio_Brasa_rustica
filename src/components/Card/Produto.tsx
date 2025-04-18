@@ -14,13 +14,20 @@ interface Iprodutos {
 interface IProdutosProps {
   header: string;
   modalAberto: (status: boolean) => void;
-  produtos: Iprodutos[];
+  produtos?: Iprodutos[]; // Torna opcional
   montar: boolean;
   sinalOpenFrom: (open: boolean) => void;
   tipoProduto?: string;
 }
 
-function Produto({ header, produtos, modalAberto, montar, sinalOpenFrom, tipoProduto }: IProdutosProps) {
+function Produto({ 
+  header, 
+  produtos = [], // Valor padrão para array vazio
+  modalAberto, 
+  montar, 
+  sinalOpenFrom, 
+  tipoProduto 
+}: IProdutosProps) {
   const { PizzaMontada } = memory();
   const [modal, setModal] = useState(false);
   const [montarPizzaModal, setMontarPizzaModal] = useState(false);

@@ -9,7 +9,7 @@ import Banner from '/banner.png';
 import Logo from '/logo.png';
 import Formulario from './components/modal/Formulario';
 
-const { EsfihaAberta, EsfihaFechada, HamburguerArtesanal, HamburguerTradicional, sucos, bebidas, beirutes, drinks, petiscos } = memory();
+const { Esfihas, HamburguerArtesanal, HamburguerTradicional, sucos, bebidas, beirutes, drinks, petiscos } = memory();
 
 export interface IPedido {
   id: number;
@@ -156,10 +156,7 @@ export default function Home() {
               <a href="#Pizzas">Pizzas</a>
             </li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg">
-              <a href="#EsfihasAbertas">Esfihas Abertas</a>
-            </li>
-            <li className="bg-white w-fit px-3 py-1 rounded-lg">
-              <a href="#EsfihasFechadas">Esfihas Fechadas</a>
+              <a href="#Esfihas">Esfihas</a>
             </li>
             <li className="bg-white w-fit px-3 py-1 rounded-lg">
               <a href="#HamburguerArtesanal">Hambúrguer Artesanal</a>
@@ -197,17 +194,9 @@ export default function Home() {
             />            
             
             <Produto
-              header="Esfihas Abertas"
-              produtos={EsfihaAberta}
-              tipoProduto="Esfiha Aberta"
-              modalAberto={setAlgumModalAberto}
-              montar={false}
-              sinalOpenFrom={setFormularioModal}
-            />
-            <Produto
-              header="Esfihas Fechadas"
-              produtos={EsfihaFechada}
-              tipoProduto="Esfiha Fechada"
+              header="Esfihas"
+              produtos={Esfihas}
+              tipoProduto="Esfihas"
               modalAberto={setAlgumModalAberto}
               montar={false}
               sinalOpenFrom={setFormularioModal}

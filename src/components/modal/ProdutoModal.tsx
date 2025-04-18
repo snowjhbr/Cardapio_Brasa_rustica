@@ -11,7 +11,8 @@ interface Produto {
   tipoProduto?: string;
   descricao: string;
   imagem: string;
-  valor: number;
+  valor?: number;
+  tipos?: { tipo: string; valor: number }[];
 }
 
 interface Sabor {
@@ -49,11 +50,16 @@ export default function ProdutoModal(props: PropsModal) {
   const [sabor2, setSabor2] = useState<Sabor | null>(null);
   const [borda, setBorda] = useState<Borda>({ nome: 'Sem recheio', valor: 0.00 });
   const [pao, setPao] = useState<Pao | null>(null);
+  const [tipoEsfiha, setTipoEsfiha] = useState<string>(
+    props.produto.tipos?.[0]?.tipo || ''
+  );
 
   // Calcula o preço
   const valorUnitario = props.montarPizza
     ? (sabor1 ? sabor1.valor : 0) + (sabor2 ? sabor2.valor : 0) + borda.valor
-    : props.produto.valor +
+    : props.produto.tipos
+    ? props.produto.tipos.find((t) => t.tipo === tipoEsfiha)?.valor || 0
+    : (props.produto.valor || 0) +
       (props.produto.tipoProduto === 'Pizza' ? borda.valor : 0) +
       (props.produto.tipoProduto === 'Hambúrguer' ? (pao ? pao.valor : 0) : 0);
   const valorTotal = valorUnitario * quantidade;
@@ -63,26 +69,30 @@ export default function ProdutoModal(props: PropsModal) {
     ? sabor1 && sabor2
     : props.produto.tipoProduto === 'Hambúrguer'
     ? pao !== null
+    : props.produto.tipos
+    ? tipoEsfiha !== ''
     : true;
 
   function montarPedido() {
     const bordaTexto = borda.nome !== 'Sem recheio' ? `, Borda ${borda.nome}` : '';
     const paoTexto = pao && pao.nome !== 'Pão Bola' ? `, ${pao.nome}` : '';
+    const tipoEsfihaTexto = props.produto.tipos ? ` ${tipoEsfiha}` : '';
     const pedidoMontado = {
       id: props.montarPizza ? Date.now() : props.produto.id,
       nome: props.montarPizza
         ? `Metade ${sabor1!.nome} / Metade ${sabor2!.nome}${bordaTexto}`
-        : `${props.produto.nome}${bordaTexto}${paoTexto}`,
-      tipoProduto: props.produto.tipoProduto || 'Pizza',
+        : `${props.produto.nome}${tipoEsfihaTexto}${bordaTexto}${paoTexto}`,
+      tipoProduto: props.produto.tipoProduto || 'Esfiha',
       descricao: props.montarPizza
         ? `Pizza com metade ${sabor1!.nome} e metade ${sabor2!.nome}${bordaTexto}`
-        : `${props.produto.descricao}${bordaTexto}${paoTexto}`,
+        : `${props.produto.descricao}${tipoEsfihaTexto}${bordaTexto}${paoTexto}`,
       observacao: observacao || null,
       quantidade,
       valor_unit: valorUnitario,
       valor_total: valorTotal,
       borda: borda.nome !== 'Sem recheio' ? borda.nome : null,
       pao: pao && pao.nome !== 'Pão Bola' ? pao.nome : null,
+      tipoEsfiha: props.produto.tipos ? tipoEsfiha : null,
     };
     return { pedidoMontado };
   }
@@ -110,7 +120,9 @@ export default function ProdutoModal(props: PropsModal) {
 
   return (
     <div className="fixed w-full h-full left-0 top-0 bg-black bg-opacity-15 flex items-center justify-center z-50">
-      {formulario ? <Formulario closeSacola={() => null} closeModal={() => setFormulario(false)} /> : null}
+      {formulario ? (
+        <Formulario closeSacola={() => null} closeModal={() => setFormulario(false)} />
+      ) : null}
       <div className="bg-[rgb(228 228 231)] md:w-[60%] md:h-[60%] h-full w-full bg-white rounded-md shadow-md overflow-hidden flex">
         {finalizarPedido ? (
           <div className="flex flex-col items-center justify-center w-full">
@@ -138,7 +150,7 @@ export default function ProdutoModal(props: PropsModal) {
             <figure className="lg:w-[40%] w-full bg-orange-300">
               <img
                 className="w-full h-full object-cover"
-                src={props.montarPizza ? '/placeholder.jpg' : props.produto.imagem || '/placeholder.jpg'}
+                src={props.produto.imagem}
                 alt={props.produto.nome}
               />
             </figure>
@@ -146,10 +158,16 @@ export default function ProdutoModal(props: PropsModal) {
               <div className="flex justify-between items-start pb-2">
                 <div>
                   <h1 className="font-semibold">
-                    {props.montarPizza ? 'Monte Sua Pizza' : `${props.produto.tipoProduto ? `${props.produto.tipoProduto} ` : ''}${props.produto.nome}`}
+                    {props.montarPizza
+                      ? 'Monte Sua Pizza'
+                      : `${props.produto.tipoProduto ? `${props.produto.tipoProduto} ` : ''}${
+                          props.produto.nome
+                        }`}
                   </h1>
                   <p className="text-sm text-zinc-700">
-                    {props.montarPizza ? 'Escolha dois sabores e uma borda para sua pizza' : props.produto.descricao}
+                    {props.montarPizza
+                      ? 'Escolha dois sabores e uma borda para sua pizza'
+                      : props.produto.descricao}
                   </p>
                 </div>
                 <button
@@ -168,13 +186,15 @@ export default function ProdutoModal(props: PropsModal) {
                       <select
                         className="w-full p-2 border rounded-md"
                         onChange={(e) => {
-                          const selected = props.saboresDisponiveis.find(p => p.nome === e.target.value);
+                          const selected = props.saboresDisponiveis.find(
+                            (p) => p.nome === e.target.value
+                          );
                           setSabor1(selected || null);
                         }}
                         value={sabor1?.nome || ''}
                       >
                         <option value="">Selecione um sabor</option>
-                        {props.saboresDisponiveis.map(sabor => (
+                        {props.saboresDisponiveis.map((sabor) => (
                           <option key={sabor.nome} value={sabor.nome}>
                             {sabor.nome} (R$ {sabor.valor.toFixed(2).replace('.', ',')})
                           </option>
@@ -186,14 +206,16 @@ export default function ProdutoModal(props: PropsModal) {
                       <select
                         className="w-full p-2 border rounded-md"
                         onChange={(e) => {
-                          const selected = props.saboresDisponiveis.find(p => p.nome === e.target.value);
+                          const selected = props.saboresDisponiveis.find(
+                            (p) => p.nome === e.target.value
+                          );
                           setSabor2(selected || null);
                         }}
                         value={sabor2?.nome || ''}
                         disabled={!sabor1}
                       >
                         <option value="">Selecione um sabor</option>
-                        {props.saboresDisponiveis.map(sabor => (
+                        {props.saboresDisponiveis.map((sabor) => (
                           <option key={sabor.nome} value={sabor.nome}>
                             {sabor.nome} (R$ {sabor.valor.toFixed(2).replace('.', ',')})
                           </option>
@@ -203,19 +225,48 @@ export default function ProdutoModal(props: PropsModal) {
                   </>
                 ) : null}
 
+                {props.produto.tipos && (
+                  <div>
+                    <h2 className="font-semibold pb-1">Tipo de Esfiha:</h2>
+                    <div className="flex flex-wrap gap-2">
+                      {props.produto.tipos.map((tipo) => (
+                        <button
+                          key={tipo.tipo}
+                          className={`px-3 py-1 rounded-lg shadow-sm transition-colors ${
+                            tipoEsfiha === tipo.tipo
+                              ? 'bg-orange-500 text-white'
+                              : 'bg-zinc-200 text-zinc-800'
+                          }`}
+                          onClick={() => setTipoEsfiha(tipo.tipo)}
+                        >
+                          {tipo.tipo} (R$ {tipo.valor.toFixed(2).replace('.', ',')})
+                        </button>
+                      ))}
+                    </div>
+                    {!tipoEsfiha && (
+                      <p className="text-red-500 text-sm mt-1">
+                        Por favor, escolha um tipo de esfiha.
+                      </p>
+                    )}
+                  </div>
+                )}
+
                 {(props.montarPizza || props.produto.tipoProduto === 'Pizza') && (
                   <div>
                     <h2 className="font-semibold pb-1">Borda:</h2>
                     <div className="flex flex-wrap gap-2">
-                      {bordas.map(b => (
+                      {bordas.map((b) => (
                         <button
                           key={b.nome}
                           className={`px-3 py-1 rounded-lg shadow-sm transition-colors ${
-                            borda.nome === b.nome ? 'bg-orange-500 text-white' : 'bg-zinc-200 text-zinc-800'
+                            borda.nome === b.nome
+                              ? 'bg-orange-500 text-white'
+                              : 'bg-zinc-200 text-zinc-800'
                           }`}
                           onClick={() => setBorda(b)}
                         >
-                          {b.nome} {b.valor > 0 ? `(R$ ${b.valor.toFixed(2).replace('.', ',')})` : ''}
+                          {b.nome}{' '}
+                          {b.valor > 0 ? `(R$ ${b.valor.toFixed(2).replace('.', ',')})` : ''}
                         </button>
                       ))}
                     </div>
@@ -226,15 +277,18 @@ export default function ProdutoModal(props: PropsModal) {
                   <div>
                     <h2 className="font-semibold pb-1">Pão:</h2>
                     <div className="flex flex-wrap gap-2">
-                      {paes.map(p => (
+                      {paes.map((p) => (
                         <button
                           key={p.nome}
                           className={`px-3 py-1 rounded-lg shadow-sm transition-colors ${
-                            pao?.nome === p.nome ? 'bg-orange-500 text-white' : 'bg-zinc-200 text-zinc-800'
+                            pao?.nome === p.nome
+                              ? 'bg-orange-500 text-white'
+                              : 'bg-zinc-200 text-zinc-800'
                           }`}
                           onClick={() => setPao(p)}
                         >
-                          {p.nome} {p.valor > 0 ? `(R$ ${p.valor.toFixed(2).replace('.', ',')})` : ''}
+                          {p.nome}{' '}
+                          {p.valor > 0 ? `(R$ ${p.valor.toFixed(2).replace('.', ',')})` : ''}
                         </button>
                       ))}
                     </div>
@@ -256,7 +310,17 @@ export default function ProdutoModal(props: PropsModal) {
 
                 <div className="border-t pt-2 mt-2">
                   <h2 className="font-semibold">Resumo do Pedido</h2>
-                  <p>{props.montarPizza ? 'Monte Sua Pizza' : props.produto.nome}: R$ {props.montarPizza ? (sabor1?.valor || 0) + (sabor2?.valor || 0) : props.produto.valor.toFixed(2).replace('.', ',')}</p>
+                  <p>
+                    {props.montarPizza ? 'Monte Sua Pizza' : props.produto.nome}
+                    {props.produto.tipos && tipoEsfiha ? ` (${tipoEsfiha})` : ''}: R$
+                    {props.montarPizza
+                      ? ((sabor1?.valor || 0) + (sabor2?.valor || 0)).toFixed(2).replace('.', ',')
+                      : props.produto.tipos
+                      ? (props.produto.tipos.find((t) => t.tipo === tipoEsfiha)?.valor || 0)
+                          .toFixed(2)
+                          .replace('.', ',')
+                      : (props.produto.valor || 0).toFixed(2).replace('.', ',')}
+                  </p>
                   {(props.montarPizza || props.produto.tipoProduto === 'Pizza') && borda.valor > 0 && (
                     <p>Borda {borda.nome}: R$ {borda.valor.toFixed(2).replace('.', ',')}</p>
                   )}
@@ -264,7 +328,8 @@ export default function ProdutoModal(props: PropsModal) {
                     <p>{pao.nome}: R$ {pao.valor.toFixed(2).replace('.', ',')}</p>
                   )}
                   <p className="font-bold">
-                    Total: R$ {valorUnitario.toFixed(2).replace('.', ',')} x {quantidade} = R$ {valorTotal.toFixed(2).replace('.', ',')}
+                    Total: R$ {valorUnitario.toFixed(2).replace('.', ',')} x {quantidade} = R$
+                    {valorTotal.toFixed(2).replace('.', ',')}
                   </p>
                 </div>
               </div>
@@ -281,7 +346,9 @@ export default function ProdutoModal(props: PropsModal) {
                 </div>
                 <button
                   onClick={salvarPedidoLocal}
-                  className={`w-full rounded-lg py-2 text-white ${pedidoCompleto ? 'bg-blue-500' : 'bg-gray-400 cursor-not-allowed'}`}
+                  className={`w-full rounded-lg py-2 text-white ${
+                    pedidoCompleto ? 'bg-blue-500' : 'bg-gray-400 cursor-not-allowed'
+                  }`}
                   disabled={!pedidoCompleto}
                 >
                   Adicionar ao carrinho R$ {valorTotal.toFixed(2).replace('.', ',')}
