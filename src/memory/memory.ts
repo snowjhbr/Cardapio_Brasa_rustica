@@ -116,7 +116,7 @@ export function memory() {
             id: 15,
             nome: 'Brasa rústica',
             descricao: 'Mussarela frango bacon calabresa picada barbecue orégano e molho da casa.',
-            imagem: 'pizzas/PizzaBrasa.png',
+            imagem: 'pizzas/PizzaBrasarustica.png',
             valor: 38.00,
             tipoProduto: 'Pizza'
         },
