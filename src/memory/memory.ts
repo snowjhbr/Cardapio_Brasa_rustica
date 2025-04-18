@@ -665,63 +665,63 @@ export function memory() {
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 2,
             nome: 'Frango',
             descricao: 'Mussarela frango milho orégano e molho da casa. ',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 3,
             nome: 'Calabresa',
             descricao: 'Mussarela calabresa cebola em fios orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 4,
             nome: 'Mista',
             descricao: 'Mussarela presunto orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 5,
             nome: 'Marguerita',
             descricao: 'Mussarela tomate manjericão orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 6,
             nome: 'Mussarela',
             descricao: 'Mussarela tomate orégano e molho da casa',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 7,
             nome: 'Baiana',
             descricao: 'Mussarela calabresa picada pimenta ovo cebola orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 9,
             nome: 'Portuguesa',
             descricao: 'Mussarela presunto ovos tomate milho cebola pimentão orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 10,
@@ -735,28 +735,28 @@ export function memory() {
             nome: 'A moda da casa',
             descricao: 'Mussarela frango presunto calabresa bacon batata palha orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 12,
             nome: 'Carbonara',
             descricao: 'Mussarela presunto bacon catupiry orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 13,
             nome: 'Milho',
             descricao: 'Mussarela milho verde orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 14,
             nome: 'Bacon',
             descricao: 'Mussarela bacon cebola em fios orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 15,
@@ -770,7 +770,7 @@ export function memory() {
             nome: 'Barbebacon',
             descricao: 'Mussarela bacon barbecue orégano e molho da casa.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
         {
             id: 17,
@@ -791,7 +791,7 @@ export function memory() {
             nome: 'Chocolate',
             descricao: 'Chocolate.',
             imagem: '',
-            valor: 7.00
+            valor: 8.00
         },
        
     ];
