@@ -791,7 +791,7 @@ export function memory() {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
-            imagem: '/beirutes/Beirute4queijos.png',
+            imagem: '/beirutes/Beirute4queijos.webp',
             valor: 45.00
         },
         {
