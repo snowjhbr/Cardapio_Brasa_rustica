@@ -1,4 +1,3 @@
-// src/Home.tsx
 import { useEffect, useState } from 'react';
 import { ShoppingBag, WhatsappLogo, X, SmileySad, Minus, Plus, Trash } from 'phosphor-react';
 import { memory } from './memory/memory';
@@ -15,7 +14,7 @@ export interface IPedido {
   id: number;
   nome: string;
   descricao: string;
-  observacao: string | null; // Corrige para permitir null
+  observacao: string | null;
   quantidade: number;
   valor_unit: number;
   valor_total: number;
@@ -149,6 +148,11 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Aviso sobre imagens ilustrativas */}
+      <div className="bg-gray-100 text-gray-700 text-center p-4 mx-4 rounded-md md:mx-10 lg:mx-20">
+        <p>As imagens apresentadas não correspondem à aparência real do produto. São apenas ilustrativas.</p>
+      </div>
+
       <main className="px-4 w-full md:px-10 lg:px-20">
         <nav className="flex flex-col gap-3 sticky top-0 pt-2 bg-zinc-200 w-full z-30">
           <ul className="w-full overflow-auto flex items-center gap-3">
@@ -192,7 +196,6 @@ export default function Home() {
               montar={true}
               sinalOpenFrom={setFormularioModal}
             />            
-            
             <Produto
               header="Esfihas"
               produtos={Esfihas}
