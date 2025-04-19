@@ -742,126 +742,126 @@ export function memory() {
             id: 1,
             nome: 'Franbacon',
             descricao: 'Mussarela, frango, bacon, orégano e molho da casa. ',
-            imagem: '',
+            imagem: '/beirutes/BeiruteFranbacon.png',
             valor: 45.00
         },
         {
             id: 2,
             nome: 'Frango',
             descricao: 'Mussarela frango milho orégano e molho da casa. ',
-            imagem: '',
+            imagem: '/beirutes/BeiruteFrango.png',
             valor: 40.00
         },
         {
             id: 3,
             nome: 'Calabresa',
             descricao: 'Mussarela calabresa cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteCalabresa.png',
             valor: 40.00
         },
         {
             id: 4,
-            nome: 'Mista',
+            nome: 'Misto',
             descricao: 'Mussarela presunto orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteMisto.png',
             valor: 40.00
         },
         {
             id: 5,
             nome: 'Marguerita',
             descricao: 'Mussarela tomate manjericão orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteMarguerita.png',
             valor: 40.00
         },
         {
             id: 6,
             nome: 'Mussarela',
             descricao: 'Mussarela tomate orégano e molho da casa',
-            imagem: '',
+            imagem: '/beirutes/BeiruteMussarela.png',
             valor: 40.00
         },
         {
             id: 7,
             nome: 'Baiana',
             descricao: 'Mussarela calabresa picada pimenta ovo cebola orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteBaiana.png',
             valor: 45.00
         },
         {
             id: 8,
             nome: '4 queijos',
             descricao: 'Mussarela parmesão queijo coalho catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/Beirute4queijos.png',
             valor: 45.00
         },
         {
             id: 9,
             nome: 'Portuguesa',
             descricao: 'Mussarela presunto ovos tomate milho cebola pimentão orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeirutePortuguesa.png',
             valor: 45.00
         },
         {
             id: 10,
             nome: 'Carne do sol',
             descricao: 'Mussarela carne do sol cebola roxa orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteCarnedesol.png',
             valor: 50.00
         },
         {
             id: 11,
             nome: 'A moda da casa',
             descricao: 'Mussarela frango presunto calabresa bacon batata palha orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteModa.png',
             valor: 45.00
         },
         {
             id: 12,
             nome: 'Carbonara',
             descricao: 'Mussarela presunto bacon catupiry orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteCarbonara.png',
             valor: 45.00
         },
         {
             id: 13,
             nome: 'Milho',
             descricao: 'Mussarela milho verde orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteMilho.png',
             valor: 40.00
         },
         {
             id: 14,
             nome: 'Bacon',
             descricao: 'Mussarela bacon cebola em fios orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteBacon.png',
             valor: 45.00
         },
         {
             id: 15,
             nome: 'Brasa rústica',
             descricao: 'Mussarela frango bacon calabresa picada barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteBrasarustica.png',
             valor: 45.00
         },
         {
             id: 16,
             nome: 'Barbebacon',
             descricao: 'Mussarela bacon barbecue orégano e molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteBarbebacon.png',
             valor: 45.00
         },
         {
             id: 17,
             nome: 'Bigonta',
             descricao: 'Frango ovo milho mussarela orégano molho da casa.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteBigonta.png',
             valor: 45.00
         },
         {
             id: 18,
             nome: 'Mexicana',
             descricao: 'Calabresa peperone queijo coalho mussarela pimenta calabresa cebola em fios molho da casa e orégano.',
-            imagem: '',
+            imagem: '/beirutes/BeiruteMexicana.png',
             valor: 45.00
         }
         
@@ -872,35 +872,35 @@ export function memory() {
             id: 1,
             nome: 'Clássico',
             descricao: 'Pão brioche selado, burger bovino 130g, queijo gratinado e molho "secreto" rústico',
-            imagem: '',
+            imagem: '/hamburguerartesanal/HamburguerartClassico.png',
             valor: 22.40
         },
         {
             id: 2,
             nome: 'Simples ',
             descricao: 'Pão brioche selado, burger bovino 130g, molho “secreto” rústico',
-            imagem: '',
+            imagem: '/hamburguerartesanal/HamburguerartSimples.png',
             valor: 15.90
         },
         {
             id: 3,
             nome: 'X-Bacon',
             descricao: 'Pão brioche selado, burger bovino 130g, creme de cheddar artesanal, bacon e molho "secreto” rústico',
-            imagem: '',
+            imagem: '/hamburguerartesanal/HamburguerartXbacon.png',
             valor: 25.90
         },
         {
             id: 4,
             nome: 'Bacon Cream Cheese',
             descricao: 'Pão brioche selado, burger bovino 130g, cream cheese, bacon e molho "secreto" rústico',
-            imagem: '',
+            imagem: '/hamburguerartesanal/HamburguerartBaconcreamcheese.png',
             valor: 26.90
         },
         {
             id: 5,
             nome: 'Burger de Siri',
             descricao: 'Pão brioche selado, 3 burger bovino 130g, creme de cheddar artesanal, bacon, molho “secreto” rústico',
-            imagem: '',
+            imagem: '/hamburguerartesanal/HamburguerartSiri.png',
             valor: 32.90
         }
                 
@@ -911,7 +911,7 @@ export function memory() {
             id: 1,
             nome: 'X-Tudo',
             descricao: 'Pão bola, carne, frango, bacon, calabresa, queijo, ovo, salsicha, presunto, milho, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerXtudo.png',
             valor: 15.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -919,7 +919,7 @@ export function memory() {
             id: 2,
             nome: 'Carne de Sol',
             descricao: 'Pão bola, carne de sol, queijo, cebola, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerCarnedesol.png',
             valor: 16.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -927,7 +927,7 @@ export function memory() {
             id: 3,
             nome: 'Fran Bacon',
             descricao: 'Pão bola, frango, bacon, queijo, milho, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerFranbacon.png',
             valor: 13.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -935,7 +935,7 @@ export function memory() {
             id: 4,
             nome: 'X-Frango',
             descricao: 'Pão bola, frango, queijo, milho, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerFrango.png',
             valor: 11.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -943,7 +943,7 @@ export function memory() {
             id: 5,
             nome: 'X-Calabresa',
             descricao: 'Pão bola, carne, calabresa, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerCalabresa.png',
             valor: 12.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -951,7 +951,7 @@ export function memory() {
             id: 6,
             nome: 'Hamburgão',
             descricao: 'Pão bola, carne, ovo, presunto, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerHamburgao.png',
             valor: 12.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -959,7 +959,7 @@ export function memory() {
             id: 7,
             nome: 'Super Burguer',
             descricao: 'Pão bola, carne, bacon, ovo, salsicha, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerSuper.png',
             valor: 14.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -967,7 +967,7 @@ export function memory() {
             id: 8,
             nome: 'X-Egg Bacon',
             descricao: 'Pão bola, bacon, ovo, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerEggbacon.png',
             valor: 11.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -975,7 +975,7 @@ export function memory() {
             id: 9,
             nome: 'X-Bacon',
             descricao: 'Pão bola, bacon, carne, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerBacon.png',
             valor: 13.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -983,7 +983,7 @@ export function memory() {
             id: 10,
             nome: 'X-Salada',
             descricao: 'Pão bola, carne, queijo, milho, pimentão, cebola, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerSalada.png',
             valor: 10.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -991,7 +991,7 @@ export function memory() {
             id: 11,
             nome: 'Americano',
             descricao: 'Pão bola, presunto, ovo, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerAmericano.png',
             valor: 8.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -999,7 +999,7 @@ export function memory() {
             id: 12,
             nome: 'Bauru Burguer',
             descricao: 'Pão bola, carne, presunto, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerBauru.png',
             valor: 10.00,
             tipoProduto: 'Hambúrguer',
           },
@@ -1007,7 +1007,7 @@ export function memory() {
             id: 13,
             nome: 'X-Burguer',
             descricao: 'Pão bola, carne, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerXburguer.png',
             valor: 8.50,
             tipoProduto: 'Hambúrguer',
           },
@@ -1015,7 +1015,7 @@ export function memory() {
             id: 14,
             nome: 'Egg Burguer',
             descricao: 'Pão bola, carne, ovo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerEggburguer.png',
             valor: 8.50,
             tipoProduto: 'Hambúrguer',
           },
@@ -1023,7 +1023,7 @@ export function memory() {
             id: 15,
             nome: 'Egg',
             descricao: 'Pão bola, ovo, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerEgg.png',
             valor: 7.50,
             tipoProduto: 'Hambúrguer',
           },
@@ -1031,7 +1031,7 @@ export function memory() {
             id: 16,
             nome: 'Hambúrguer',
             descricao: 'Pão bola, carne, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerHamburguer.png',
             valor: 6.50,
             tipoProduto: 'Hambúrguer',
           },
@@ -1039,7 +1039,7 @@ export function memory() {
             id: 17,
             nome: 'Misto',
             descricao: 'Pão bola, presunto, queijo, alface e tomate',
-            imagem: '',
+            imagem: '/hamburguertradicional/HamburguerMisto.png',
             valor: 7.50,
             tipoProduto: 'Hambúrguer',
           },
@@ -1327,21 +1327,21 @@ export function memory() {
             nome: 'Cebola empanada',
             descricao: 'Cebola empanada 12 unidades.',
             imagem: '/petiscos/PetiscoCebolaempanada.png',
-            valor: 9.00
+            valor: 0.00
         },
         {
             id: 10,
             nome: 'Queijo com melaço',
             descricao: 'Queijo com melaço 150g.',
             imagem: '/petiscos/PetiscoQueijocommelaco.png',
-            valor: 9.00
+            valor: 0.00
         },
         {
             id: 11,
             nome: 'Filé trinchado com fritas',
             descricao: 'Filé trinchado com fritas 400g.',
             imagem: '/petiscos/PetiscoFiletrinchado.png',
-            valor: 9.00
+            valor: 0.00
         },
         
     ];
