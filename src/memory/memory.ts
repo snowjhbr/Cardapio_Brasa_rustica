@@ -1058,49 +1058,49 @@ export function memory() {
             id: 1,
             nome: 'Morango',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoMorango.png',
             valor: 6.00
         },
         {
             id: 2,
             nome: 'Abacaxi',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoAbacaxi.png',
             valor: 6.00
         },
         {
             id: 3,
             nome: 'Goiaba',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoGoiaba.png',
             valor: 6.00
         },
         {
             id: 4,
             nome: 'Cajú',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoCaju.png',
             valor: 6.00
         },
         {
             id: 5,
             nome: 'Cajá',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoCaja.png',
             valor: 6.00
         },
         {
             id: 6,
             nome: 'Acerola',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoAcerola.png',
             valor: 6.00
         },
         {
             id: 7,
             nome: 'Manga',
             descricao: '300ml.',
-            imagem: '/',
+            imagem: '/sucos/SucoManga.png',
             valor: 6.00
         },
         
@@ -1111,42 +1111,42 @@ export function memory() {
             id: 1,
             nome: 'Coca cola 2L',
             descricao: 'Pet de 2L',
-            imagem: '',
+            imagem: '/bebidas/BebidasCoca2l.png',
             valor: 12.00
         },
         {
             id: 2,
             nome: 'Coca cola 1L ',
-            descricao: 'Pet de 2L',
-            imagem: '',
+            descricao: 'Pet de 1L',
+            imagem: '/bebidas/BebidasCoca1l.png',
             valor: 9.00
         },
         {
             id: 3,
             nome: 'Fanta 2L',
             descricao: 'Pet de 2L',
-            imagem: '',
+            imagem: '/bebidas/BebidasFanta2l.png',
             valor: 12.00
         },
         {
             id: 4,
             nome: 'Fanta 1L',
             descricao: 'Pet de 1L',
-            imagem: '',
+            imagem: '/bebidas/BebidasFanta1l.png',
             valor: 9.00
         },
         {
             id: 5,
             nome: 'Cajuína 2L',
             descricao: 'Pet de 2L',
-            imagem: '',
+            imagem: '/bebidas/BebidasCajuina2l.png',
             valor: 10.00
         },
         {
             id: 7,
             nome: 'Cajuína 1L',
             descricao: 'Pet de 1L',
-            imagem: '',
+            imagem: '/bebidas/BebidasCajuina1l.png',
             valor: 9.00
         },
         
@@ -1210,49 +1210,56 @@ export function memory() {
             id: 1,
             nome: 'Paixão',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkPaixao.png',
             valor: 10.00
         },
         {
             id: 2,
             nome: 'Paraíso  ',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkParaiso.png',
             valor: 10.00
         },
         {
             id: 3,
             nome: 'Lagoa azul',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkLagoaazul.png',
             valor: 12.00
         },
         {
             id: 4,
             nome: 'Fogo ardente',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkFogoardente.png',
             valor: 9.00
         },
         {
             id: 5,
             nome: 'Arco-íris',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkArcoiris.png',
             valor: 10.00
         },
         {
             id: 7,
             nome: 'Cupido',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkCupido.png',
             valor: 9.00
         },
         {
             id: 7,
             nome: 'Capetinha',
             descricao: '600ml',
-            imagem: '',
+            imagem: '/drinks/DrinkCapetinha1.png',
+            valor: 9.00
+        },
+        {
+            id: 8,
+            nome: 'Capetinha com alcool',
+            descricao: '600ml',
+            imagem: '/drinks/DrinkCapetinha2.png',
             valor: 9.00
         },
         
@@ -1263,77 +1270,77 @@ export function memory() {
             id: 1,
             nome: 'Batata frita 400g',
             descricao: '400g.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBatata400.png',
             valor: 16.00
         },
         {
             id: 2,
             nome: 'Batata frita 250g ',
             descricao: '250g.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBatata250.png',
             valor: 10.00
         },
         {
             id: 3,
             nome: 'Bolinha de queijo',
             descricao: 'Bolinha de queijo 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhaqueijo.png',
             valor: 15.00
         },
         {
             id: 4,
             nome: 'Bolinha de frango',
             descricao: 'Bolinha de frango 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhafrango.png',
             valor: 15.00
         },
         {
             id: 5,
             nome: 'Bolinha mista',
             descricao: 'Bolinha mista 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhamista.png',
             valor: 15.00
         },
         {
             id: 6,
             nome: 'Bolinha de bacalhau',
             descricao: 'Bolinha de bacalhau 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhabacalhau.png',
             valor: 15.00
         },
         {
             id: 7,
             nome: 'Bolinha de carne de sol',
             descricao: 'Bolinha de carne de sol 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhacarnedesol.png',
             valor: 16.00
         },
         {
             id: 8,
             nome: 'Bolinha de camarão',
             descricao: 'Bolinha de camarão 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoBolinhacamarao.png',
             valor: 16.00
         },
         {
             id: 9,
             nome: 'Cebola empanada',
             descricao: 'Cebola empanada 12 unidades.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoCebolaempanada.png',
             valor: 9.00
         },
         {
             id: 10,
             nome: 'Queijo com melaço',
             descricao: 'Queijo com melaço 150g.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoQueijocommelaco.png',
             valor: 9.00
         },
         {
             id: 11,
             nome: 'Filé trinchado com fritas',
             descricao: 'Filé trinchado com fritas 400g.',
-            imagem: '',
+            imagem: '/petiscos/PetiscoFiletrinchado.png',
             valor: 9.00
         },
         
