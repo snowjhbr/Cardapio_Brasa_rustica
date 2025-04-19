@@ -253,7 +253,7 @@ export default function Home() {
               sinalOpenFrom={setFormularioModal}
             />
             <Produto
-              header="Pestiscos"
+              header="Petiscos"
               produtos={petiscos}
               tipoProduto="Petiscos"
               modalAberto={setAlgumModalAberto}
