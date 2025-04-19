@@ -255,7 +255,7 @@ export default function Home() {
             <Produto
               header="Pestiscos"
               produtos={petiscos}
-              tipoProduto="Petisco"
+              tipoProduto="Petiscos"
               modalAberto={setAlgumModalAberto}
               montar={false}
               sinalOpenFrom={setFormularioModal}

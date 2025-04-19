@@ -1211,56 +1211,77 @@ export function memory() {
             nome: 'Paixão',
             descricao: '600ml',
             imagem: '/drinks/DrinkPaixao.png',
-            valor: 10.00
+            valor: 15.00
         },
         {
             id: 2,
             nome: 'Paraíso  ',
             descricao: '600ml',
             imagem: '/drinks/DrinkParaiso.png',
-            valor: 10.00
+            valor: 15.00
         },
         {
             id: 3,
             nome: 'Lagoa azul',
             descricao: '600ml',
             imagem: '/drinks/DrinkLagoaazul.png',
-            valor: 12.00
+            valor: 15.00
         },
         {
             id: 4,
             nome: 'Fogo ardente',
             descricao: '600ml',
             imagem: '/drinks/DrinkFogoardente.png',
-            valor: 9.00
+            valor: 15.00
         },
         {
             id: 5,
             nome: 'Arco-íris',
             descricao: '600ml',
             imagem: '/drinks/DrinkArcoiris.png',
-            valor: 10.00
+            valor: 15.00
         },
         {
             id: 7,
             nome: 'Cupido',
             descricao: '600ml',
             imagem: '/drinks/DrinkCupido.png',
-            valor: 9.00
+            valor: 15.00
         },
         {
             id: 7,
             nome: 'Capetinha',
             descricao: '600ml',
             imagem: '/drinks/DrinkCapetinha1.png',
-            valor: 9.00
+            valor: 15.00
         },
         {
             id: 8,
             nome: 'Capetinha com alcool',
             descricao: '600ml',
             imagem: '/drinks/DrinkCapetinha2.png',
-            valor: 9.00
+            valor: 15.00
+        },
+        {
+            id: 9,
+            nome: 'Soda italiana Azul',
+            descricao: 'Soda sabor laranja com limão.',
+            imagem: '/drinks/DrinkSodaazul.png',
+            valor: 15.00
+        },
+        {
+            id: 10,
+            nome: 'Soda italiana Pink ',
+            descricao: 'Soda sabor frutas vermelhas.',
+            imagem: '/drinks/DrinkSodapink.png',
+            valor: 15.00
+        },
+        {
+            id: 11,
+            nome: 'Soda italiana Amarela',
+            descricao: 'Soda sabor maracujá.',
+            imagem: '/drinks/DrinkSodaamarela.png',
+            valor: 15.00
         },
         
     ];
@@ -1327,21 +1348,21 @@ export function memory() {
             nome: 'Cebola empanada',
             descricao: 'Cebola empanada 12 unidades.',
             imagem: '/petiscos/PetiscoCebolaempanada.png',
-            valor: 0.00
+            valor: 14.00
         },
         {
             id: 10,
             nome: 'Queijo com melaço',
             descricao: 'Queijo com melaço 150g.',
             imagem: '/petiscos/PetiscoQueijocommelaco.png',
-            valor: 0.00
+            valor: 10.00
         },
         {
             id: 11,
             nome: 'Filé trinchado com fritas',
             descricao: 'Filé trinchado com fritas 400g.',
             imagem: '/petiscos/PetiscoFiletrinchado.png',
-            valor: 0.00
+            valor: 14.00
         },
         
     ];
